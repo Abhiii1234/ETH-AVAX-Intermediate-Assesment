@@ -1,4 +1,4 @@
-# MyContract
+# ETH + AVAX PROOF: Intermediate EVM Course
 
 ## Project Title
 MyContract: Demonstrating Error Handling in Solidity
