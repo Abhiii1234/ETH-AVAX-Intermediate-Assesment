@@ -3,7 +3,15 @@
 This Solidity program is a simple "Error Handling" program that demonstrates the basic syntax and functionality of the Solidity programming language. The purpose of this program is to serve as a starting point for those who are new to Solidity and want to understand how to handle errors effectively in smart contracts.
 
 ## Description
-This Solidity program is designed to demonstrate the use of `require`, `assert`, and `revert` statements in the Solidity programming language. The purpose of this program is to help developers understand how to implement error handling mechanisms in their smart contracts. This contract allows users to deposit and withdraw amounts while ensuring that certain conditions are met to maintain the integrity of the contract's state.
+This project is a Solidity smart contract designed to showcase error handling mechanisms using `require`, `assert`, and `revert` statements. Solidity is a programming language primarily used for developing smart contracts on the Ethereum blockchain. The contract implemented in this project features three functions: `requireBalance`, `assertBalance`, and `revertBalance`. These functions demonstrate different error handling techniques:
+
+- `requireBalance`: Ensures that the deposit amount is greater than a specified threshold (in this case, 10). If the condition is not met, the transaction reverts with an error message.
+
+- `assertBalance`: Asserts that the amount passed to the function is greater than zero. If the assertion fails, the transaction stops and consumes all gas sent with the transaction.
+
+- `revertBalance`: Checks if the withdrawal amount is valid based on the current balance. If the amount exceeds the balance, the transaction reverts with an error message.
+
+This contract serves as an educational tool for developers learning Solidity by providing practical examples of error handling in smart contracts. It can be used as a starting point for understanding how to handle various error conditions effectively in Solidity programming.
 
 ## Getting Started
 
