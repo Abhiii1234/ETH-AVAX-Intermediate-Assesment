@@ -1,7 +1,6 @@
 # ETH + AVAX PROOF: Intermediate EVM Course
 
-## Project Title
-MyContract: Demonstrating Error Handling in Solidity
+This Solidity program is a simple "Error Handling" program that demonstrates the basic syntax and functionality of the Solidity programming language. The purpose of this program is to serve as a starting point for those who are new to Solidity and want to understand how to handle errors effectively in smart contracts.
 
 ## Description
 This Solidity program is designed to demonstrate the use of `require`, `assert`, and `revert` statements in the Solidity programming language. The purpose of this program is to help developers understand how to implement error handling mechanisms in their smart contracts. This contract allows users to deposit and withdraw amounts while ensuring that certain conditions are met to maintain the integrity of the contract's state.
