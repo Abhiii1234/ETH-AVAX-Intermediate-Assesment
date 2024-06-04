@@ -44,3 +44,19 @@ contract MyContract {
         balance -= amount;
     }
 }
+
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to a compatible version (e.g., 0.8.0), and then click on the "Compile MyContract.sol" button.
+
+Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "MyContract" contract from the dropdown menu, and then click on the "Deploy" button.
+
+Once the contract is deployed, you can interact with it by calling the various functions:
+
+requireBalance: Call this function with an amount greater than 10 to successfully update the balance.
+assertBalance: Call this function with a positive amount to update the balance.
+revertBalance: Call this function to withdraw an amount less than or equal to the current balance. If the amount exceeds the balance, the transaction will revert with an error message.
+
+##Authors
+Abhigyan Pushkar
+
+##License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
