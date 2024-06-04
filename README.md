@@ -11,7 +11,7 @@ This Solidity program is designed to demonstrate the use of `require`, `assert`,
 ### Executing Program
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at [Remix](https://remix.ethereum.org/).
 
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a `.sol` extension (e.g., `MyContract.sol`). Copy and paste the following code into the file:
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a `.sol` extension (e.g., `avalanche.sol`). Copy and paste the following code into the file:
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -46,7 +46,7 @@ contract MyContract {
 }
 ```
 
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to a compatible version (e.g., 0.8.0), and then click on the "Compile MyContract.sol" button.
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to a compatible version (e.g., 0.8.0), and then click on the "Compile avalanche.sol" button.
 
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "MyContract" contract from the dropdown menu, and then click on the "Deploy" button.
 
