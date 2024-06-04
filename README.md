@@ -56,8 +56,8 @@ requireBalance: Call this function with an amount greater than 10 to successfull
 assertBalance: Call this function with a positive amount to update the balance.
 revertBalance: Call this function to withdraw an amount less than or equal to the current balance. If the amount exceeds the balance, the transaction will revert with an error message.
 
-##Authors
+####Authors
 Abhigyan Pushkar
 
-##License
+#####License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
