@@ -1,30 +1,26 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity 0.8.18;
 
-contract MyContract {
-    
-    uint256 public balance;
-    
-    // Function to demonstrate 'require' statement
-    function requireBalance(uint256 amount) public {
-        // Require that the deposit amount is greater than or equal to 10
-        require(amount >= 10, "required amount must be at least 10.");
-        balance -= amount;
+contract FunctionErrors {
+    function requireCondition(uint _voterAge) 
+    public pure returns (string memory){
+        uint _minVotingAge = 18;
+        require(_voterAge >= _minVotingAge, "Voter does not meet the minimum age requirement");
+        return ("Voter meets the minimum age requirement and is eligible to vote");
     }
     
-    // Function to demonstrate 'assert' statement
-    function assertBalance(uint256 amount) public {
-        // Assert that the balance is always greater than or equal to 0
-        assert(amount >= 0);
-        balance = amount;
+    function assertCondition(uint _userAge) 
+    public pure returns (string memory){
+        uint _minLegalAge = 21;
+        assert(_userAge >= _minLegalAge);
+        return("User's age is above the legal threshold");
     }
     
-    // Function to demonstrate 'revert' statement
-    function revertBalance(uint256 amount) public {
-        // Check if the withdrawal amount is valid
-        if (amount > balance) {
-            revert("Insufficient balance for withdrawal.");
+    function revertCondition(uint _amount) 
+    public pure {
+        uint _accountBalance = 1000;
+        if (_amount > _accountBalance) {
+            revert("Insufficient balance for the transaction");
         }
-        balance += amount;
     }
 }
